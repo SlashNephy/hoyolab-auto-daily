@@ -4,6 +4,7 @@ const cookies = process.env.COOKIE.split('\n').map(s => s.trim())
 const games = process.env.GAMES.split('\n').map(s => s.trim())
 const discordWebhook = process.env.DISCORD_WEBHOOK
 const discordUser = process.env.DISCORD_USER
+const language = process.env.LANGUAGE ?? 'en-us'
 const msgDelimiter = ':'
 const messages = []
 const endpoints = {
@@ -40,10 +41,10 @@ async function run(cookie, games) {
     const url = new URL(endpoint)
     const actId = url.searchParams.get('act_id')
 
-    url.searchParams.set('lang', 'en-us')
+    url.searchParams.set('lang', language)
 
     const body = JSON.stringify({
-      lang: 'en-us',
+      lang: language,
       act_id: actId
     })
 
