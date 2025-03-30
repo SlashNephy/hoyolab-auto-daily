@@ -24,6 +24,7 @@ jobs:
           GAMES: ${{ vars.GAMES }}
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           DISCORD_USER: ${{ secrets.DISCORD_USER }}
+          LANGUAGE: ${{ vars.LANGUAGE }}
   workflow-keepalive:
     if: github.event_name == 'schedule'
     runs-on: ubuntu-latest
