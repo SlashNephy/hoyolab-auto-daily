@@ -127,7 +127,7 @@ HoYoLAB localizes the check in, so the reward messages you see in game and in th
 check in history follow it.
 
 To change it, create a new repository *variable* (Settings > Secrets and variables >
-Actions > Variables) named `LANGUAGE` with one of the values HoYoLAB supports:
+Actions > Variables) named `HOYOLAB_LANG` with one of the values HoYoLAB supports:
 
 `zh-cn`, `zh-tw`, `de-de`, `en-us`, `es-es`, `fr-fr`, `id-id`, `it-it`, `ja-jp`,
 `ko-kr`, `pt-pt`, `ru-ru`, `th-th`, `tr-tr`, `vi-vn`
